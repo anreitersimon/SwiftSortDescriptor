@@ -1,0 +1,719 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C19B14F1DF56C5200F65260 /* AnyComparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C19B14E1DF56C5200F65260 /* AnyComparable.swift */; };
+		3C19B1511DF56C7000F65260 /* SortDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C19B1501DF56C7000F65260 /* SortDescriptor.swift */; };
+		3DB0EBD6A428A7F6B8976815FA691585 /* Pods-SwiftSortDescriptor_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FB2AEA77A2FEF29B8353DE0C68920A6F /* Pods-SwiftSortDescriptor_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5604F820FC7CE0B5F5C062882B795435 /* Pods-SwiftSortDescriptor_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACFBCCB30499F5C75D3F69CCCB3B91C /* Pods-SwiftSortDescriptor_Tests-dummy.m */; };
+		6208E863C5F2B0F87E21DE10C029B939 /* SwiftSortDescriptor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 879BF7C2AAF2AD44BF3AA2A994ACDE1B /* SwiftSortDescriptor-dummy.m */; };
+		77196E992AFD397C7D1BBB3CB7C08C13 /* SwiftSortDescriptor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 766C1469798E508E3CEDF52C120935CA /* SwiftSortDescriptor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A62AA958A7E6FE01E408A198A7615C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		9C2A59A92FE0A4EF94E32629A5FC1F22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		AD0DFAB210842411FDBC2159BA00D343 /* Pods-SwiftSortDescriptor_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE7A4D7B5E52FFA9644A8044D667231 /* Pods-SwiftSortDescriptor_Example-dummy.m */; };
+		ECCCD1992B13C656B7BA13CA7744BD46 /* Pods-SwiftSortDescriptor_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AD01DBC0849EBBF065BFF6ECDF5F8EA7 /* Pods-SwiftSortDescriptor_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8066712584BD8E5348034C1332C307E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		68816A333051E86D52AACF31043FC29A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68E84AA74EBE877DAC074A9FAF2A97DE;
+			remoteInfo = SwiftSortDescriptor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1340913AA72937297A485EA3BEF0FAC7 /* Pods-SwiftSortDescriptor_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftSortDescriptor_Example-frameworks.sh"; sourceTree = "<group>"; };
+		1A3A7114C8A99AE754A4EE64BEBA9715 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DC0EB5867E858E060E40B1443A67E54 /* Pods-SwiftSortDescriptor_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftSortDescriptor_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		30484303BB5C5B60A258E78F549C1C63 /* Pods-SwiftSortDescriptor_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftSortDescriptor_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3C19B14E1DF56C5200F65260 /* AnyComparable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyComparable.swift; sourceTree = "<group>"; };
+		3C19B1501DF56C7000F65260 /* SortDescriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortDescriptor.swift; sourceTree = "<group>"; };
+		4059536D168840B52BF486F709A9EA49 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		592A15C15F7A8E78F3CC20C5EB99DEB6 /* SwiftSortDescriptor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftSortDescriptor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		602C5E3ED356C0D2DFCB1DB05541AF38 /* Pods-SwiftSortDescriptor_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SwiftSortDescriptor_Example.modulemap"; sourceTree = "<group>"; };
+		61C66D29554184AC58CC6B7D418E42C5 /* Pods-SwiftSortDescriptor_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftSortDescriptor_Tests-resources.sh"; sourceTree = "<group>"; };
+		630EB54AF52CA7EE216B6EEC97B6FD7D /* Pods-SwiftSortDescriptor_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftSortDescriptor_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		71C0414BE2CF2B9A10CD2EA20FDA6772 /* Pods-SwiftSortDescriptor_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftSortDescriptor_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		7452E49B0D0148FC4D94D146BDD62B14 /* Pods-SwiftSortDescriptor_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftSortDescriptor_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		766C1469798E508E3CEDF52C120935CA /* SwiftSortDescriptor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSortDescriptor-umbrella.h"; sourceTree = "<group>"; };
+		7A5661639FEF8B295AA3056040D6BF24 /* Pods-SwiftSortDescriptor_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftSortDescriptor_Example-resources.sh"; sourceTree = "<group>"; };
+		7E336B2471317549170883FADF952489 /* Pods-SwiftSortDescriptor_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftSortDescriptor_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		84FA5C303521AD4284A2A61CD8151EE1 /* SwiftSortDescriptor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSortDescriptor-prefix.pch"; sourceTree = "<group>"; };
+		879BF7C2AAF2AD44BF3AA2A994ACDE1B /* SwiftSortDescriptor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSortDescriptor-dummy.m"; sourceTree = "<group>"; };
+		8A701FDC3341D62CCDF8899FEF4C8499 /* Pods-SwiftSortDescriptor_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftSortDescriptor_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		8E7F53891CA57A03FF4B2653522FA279 /* SwiftSortDescriptor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSortDescriptor.xcconfig; sourceTree = "<group>"; };
+		92AC1DFFD959BA4D89A3FEB97614A0FB /* Pods_SwiftSortDescriptor_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftSortDescriptor_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		98C9850F6B191ADBEEA026B27DD1523C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9ACFBCCB30499F5C75D3F69CCCB3B91C /* Pods-SwiftSortDescriptor_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftSortDescriptor_Tests-dummy.m"; sourceTree = "<group>"; };
+		AD01DBC0849EBBF065BFF6ECDF5F8EA7 /* Pods-SwiftSortDescriptor_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftSortDescriptor_Tests-umbrella.h"; sourceTree = "<group>"; };
+		AF2B26F18D0A5B3883A3E511420775F0 /* SwiftSortDescriptor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftSortDescriptor.modulemap; sourceTree = "<group>"; };
+		B1EECAA47B6FC5FA2FB651E7E613CCA2 /* Pods-SwiftSortDescriptor_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SwiftSortDescriptor_Tests.modulemap"; sourceTree = "<group>"; };
+		C194B48A98E53C1DBDD090D17DA64496 /* Pods-SwiftSortDescriptor_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftSortDescriptor_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		EDE7A4D7B5E52FFA9644A8044D667231 /* Pods-SwiftSortDescriptor_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftSortDescriptor_Example-dummy.m"; sourceTree = "<group>"; };
+		F130B737946B56573FCE61C03DB79EC4 /* Pods-SwiftSortDescriptor_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftSortDescriptor_Example.release.xcconfig"; sourceTree = "<group>"; };
+		F6EE138F9DC3FED323A0A36ABB9DFD00 /* Pods_SwiftSortDescriptor_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftSortDescriptor_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB2AEA77A2FEF29B8353DE0C68920A6F /* Pods-SwiftSortDescriptor_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftSortDescriptor_Example-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		12100F79C4EE25561D7BD9FCD8D7564C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A62AA958A7E6FE01E408A198A7615C5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2674C738AB85D03994F7A0E00B0FA111 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C2A59A92FE0A4EF94E32629A5FC1F22 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E428DDA8C1B75F6EDC44B4F2F007272 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8066712584BD8E5348034C1332C307E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F5F1345CAA964073B6E238BF39B000C /* Pods-SwiftSortDescriptor_Example */ = {
+			isa = PBXGroup;
+			children = (
+				1A3A7114C8A99AE754A4EE64BEBA9715 /* Info.plist */,
+				602C5E3ED356C0D2DFCB1DB05541AF38 /* Pods-SwiftSortDescriptor_Example.modulemap */,
+				30484303BB5C5B60A258E78F549C1C63 /* Pods-SwiftSortDescriptor_Example-acknowledgements.markdown */,
+				71C0414BE2CF2B9A10CD2EA20FDA6772 /* Pods-SwiftSortDescriptor_Example-acknowledgements.plist */,
+				EDE7A4D7B5E52FFA9644A8044D667231 /* Pods-SwiftSortDescriptor_Example-dummy.m */,
+				1340913AA72937297A485EA3BEF0FAC7 /* Pods-SwiftSortDescriptor_Example-frameworks.sh */,
+				7A5661639FEF8B295AA3056040D6BF24 /* Pods-SwiftSortDescriptor_Example-resources.sh */,
+				FB2AEA77A2FEF29B8353DE0C68920A6F /* Pods-SwiftSortDescriptor_Example-umbrella.h */,
+				7452E49B0D0148FC4D94D146BDD62B14 /* Pods-SwiftSortDescriptor_Example.debug.xcconfig */,
+				F130B737946B56573FCE61C03DB79EC4 /* Pods-SwiftSortDescriptor_Example.release.xcconfig */,
+			);
+			name = "Pods-SwiftSortDescriptor_Example";
+			path = "Target Support Files/Pods-SwiftSortDescriptor_Example";
+			sourceTree = "<group>";
+		};
+		5D3798B22DB6BAD79D7B1BD53A3F2F5A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				98C9850F6B191ADBEEA026B27DD1523C /* Info.plist */,
+				AF2B26F18D0A5B3883A3E511420775F0 /* SwiftSortDescriptor.modulemap */,
+				8E7F53891CA57A03FF4B2653522FA279 /* SwiftSortDescriptor.xcconfig */,
+				879BF7C2AAF2AD44BF3AA2A994ACDE1B /* SwiftSortDescriptor-dummy.m */,
+				84FA5C303521AD4284A2A61CD8151EE1 /* SwiftSortDescriptor-prefix.pch */,
+				766C1469798E508E3CEDF52C120935CA /* SwiftSortDescriptor-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SwiftSortDescriptor";
+			sourceTree = "<group>";
+		};
+		65E4D3DC758814D7949EBD4F9372170B /* SwiftSortDescriptor */ = {
+			isa = PBXGroup;
+			children = (
+				B2DA74EE2C53495C27EADB2A212D881D /* Classes */,
+			);
+			path = SwiftSortDescriptor;
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				85DFA6E17CE47EB1A7FAB7B58917BE82 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				B94E891BC271D85D21B16964F87972E9 /* Products */,
+				989C163B2E47CB8D42E10C0B40925858 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		85DFA6E17CE47EB1A7FAB7B58917BE82 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CAB5716DE5FB0420B9290C322EF5306E /* SwiftSortDescriptor */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		989C163B2E47CB8D42E10C0B40925858 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F5F1345CAA964073B6E238BF39B000C /* Pods-SwiftSortDescriptor_Example */,
+				F6AB80E4712DD54EEF3378EAA716509F /* Pods-SwiftSortDescriptor_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B2DA74EE2C53495C27EADB2A212D881D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3C19B14E1DF56C5200F65260 /* AnyComparable.swift */,
+				3C19B1501DF56C7000F65260 /* SortDescriptor.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B94E891BC271D85D21B16964F87972E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92AC1DFFD959BA4D89A3FEB97614A0FB /* Pods_SwiftSortDescriptor_Example.framework */,
+				F6EE138F9DC3FED323A0A36ABB9DFD00 /* Pods_SwiftSortDescriptor_Tests.framework */,
+				592A15C15F7A8E78F3CC20C5EB99DEB6 /* SwiftSortDescriptor.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CAB5716DE5FB0420B9290C322EF5306E /* SwiftSortDescriptor */ = {
+			isa = PBXGroup;
+			children = (
+				5D3798B22DB6BAD79D7B1BD53A3F2F5A /* Support Files */,
+				65E4D3DC758814D7949EBD4F9372170B /* SwiftSortDescriptor */,
+			);
+			name = SwiftSortDescriptor;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		F6AB80E4712DD54EEF3378EAA716509F /* Pods-SwiftSortDescriptor_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4059536D168840B52BF486F709A9EA49 /* Info.plist */,
+				B1EECAA47B6FC5FA2FB651E7E613CCA2 /* Pods-SwiftSortDescriptor_Tests.modulemap */,
+				C194B48A98E53C1DBDD090D17DA64496 /* Pods-SwiftSortDescriptor_Tests-acknowledgements.markdown */,
+				2DC0EB5867E858E060E40B1443A67E54 /* Pods-SwiftSortDescriptor_Tests-acknowledgements.plist */,
+				9ACFBCCB30499F5C75D3F69CCCB3B91C /* Pods-SwiftSortDescriptor_Tests-dummy.m */,
+				7E336B2471317549170883FADF952489 /* Pods-SwiftSortDescriptor_Tests-frameworks.sh */,
+				61C66D29554184AC58CC6B7D418E42C5 /* Pods-SwiftSortDescriptor_Tests-resources.sh */,
+				AD01DBC0849EBBF065BFF6ECDF5F8EA7 /* Pods-SwiftSortDescriptor_Tests-umbrella.h */,
+				630EB54AF52CA7EE216B6EEC97B6FD7D /* Pods-SwiftSortDescriptor_Tests.debug.xcconfig */,
+				8A701FDC3341D62CCDF8899FEF4C8499 /* Pods-SwiftSortDescriptor_Tests.release.xcconfig */,
+			);
+			name = "Pods-SwiftSortDescriptor_Tests";
+			path = "Target Support Files/Pods-SwiftSortDescriptor_Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4EB306532515B957DE76BB0917631D38 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECCCD1992B13C656B7BA13CA7744BD46 /* Pods-SwiftSortDescriptor_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9AE4CBDCD93756D0E98E2C228A64828 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77196E992AFD397C7D1BBB3CB7C08C13 /* SwiftSortDescriptor-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8007BCC57A68576898E79727757CE46 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB0EBD6A428A7F6B8976815FA691585 /* Pods-SwiftSortDescriptor_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		68E84AA74EBE877DAC074A9FAF2A97DE /* SwiftSortDescriptor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18FE0750E90A5CCFFE426D4E966889B5 /* Build configuration list for PBXNativeTarget "SwiftSortDescriptor" */;
+			buildPhases = (
+				DB2061D337F81AE44E48B107B7AF7B57 /* Sources */,
+				12100F79C4EE25561D7BD9FCD8D7564C /* Frameworks */,
+				A9AE4CBDCD93756D0E98E2C228A64828 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftSortDescriptor;
+			productName = SwiftSortDescriptor;
+			productReference = 592A15C15F7A8E78F3CC20C5EB99DEB6 /* SwiftSortDescriptor.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7A4C2319CCC113BEC1D6B3BB126FC375 /* Pods-SwiftSortDescriptor_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B3F7BDD7665DC5B3B7EA4B68A3FAC26 /* Build configuration list for PBXNativeTarget "Pods-SwiftSortDescriptor_Tests" */;
+			buildPhases = (
+				3624A50BBBB6EB2F586321C21C2B682B /* Sources */,
+				2674C738AB85D03994F7A0E00B0FA111 /* Frameworks */,
+				4EB306532515B957DE76BB0917631D38 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SwiftSortDescriptor_Tests";
+			productName = "Pods-SwiftSortDescriptor_Tests";
+			productReference = F6EE138F9DC3FED323A0A36ABB9DFD00 /* Pods_SwiftSortDescriptor_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9807E20334777BE4DBB02C1AFEFA10AC /* Pods-SwiftSortDescriptor_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B617FDA1A51835C0A5FBB5F1B5CA7041 /* Build configuration list for PBXNativeTarget "Pods-SwiftSortDescriptor_Example" */;
+			buildPhases = (
+				07312451CAA335406B120B8C97E2C817 /* Sources */,
+				9E428DDA8C1B75F6EDC44B4F2F007272 /* Frameworks */,
+				B8007BCC57A68576898E79727757CE46 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8293418BE29C228056FD9F1F006297F /* PBXTargetDependency */,
+			);
+			name = "Pods-SwiftSortDescriptor_Example";
+			productName = "Pods-SwiftSortDescriptor_Example";
+			productReference = 92AC1DFFD959BA4D89A3FEB97614A0FB /* Pods_SwiftSortDescriptor_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					68E84AA74EBE877DAC074A9FAF2A97DE = {
+						LastSwiftMigration = 0820;
+					};
+					9807E20334777BE4DBB02C1AFEFA10AC = {
+						LastSwiftMigration = 0820;
+					};
+				};
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = B94E891BC271D85D21B16964F87972E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9807E20334777BE4DBB02C1AFEFA10AC /* Pods-SwiftSortDescriptor_Example */,
+				7A4C2319CCC113BEC1D6B3BB126FC375 /* Pods-SwiftSortDescriptor_Tests */,
+				68E84AA74EBE877DAC074A9FAF2A97DE /* SwiftSortDescriptor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07312451CAA335406B120B8C97E2C817 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD0DFAB210842411FDBC2159BA00D343 /* Pods-SwiftSortDescriptor_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3624A50BBBB6EB2F586321C21C2B682B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5604F820FC7CE0B5F5C062882B795435 /* Pods-SwiftSortDescriptor_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB2061D337F81AE44E48B107B7AF7B57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C19B14F1DF56C5200F65260 /* AnyComparable.swift in Sources */,
+				6208E863C5F2B0F87E21DE10C029B939 /* SwiftSortDescriptor-dummy.m in Sources */,
+				3C19B1511DF56C7000F65260 /* SortDescriptor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B8293418BE29C228056FD9F1F006297F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftSortDescriptor;
+			target = 68E84AA74EBE877DAC074A9FAF2A97DE /* SwiftSortDescriptor */;
+			targetProxy = 68816A333051E86D52AACF31043FC29A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		25925460AA4119C72E00643FD6BA239A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A701FDC3341D62CCDF8899FEF4C8499 /* Pods-SwiftSortDescriptor_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftSortDescriptor_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftSortDescriptor_Tests/Pods-SwiftSortDescriptor_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SwiftSortDescriptor_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3466FA2B87A239C273922645605327F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F130B737946B56573FCE61C03DB79EC4 /* Pods-SwiftSortDescriptor_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftSortDescriptor_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftSortDescriptor_Example/Pods-SwiftSortDescriptor_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SwiftSortDescriptor_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		51BE65FF6AD4291DC05FFF1C86ED59DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 630EB54AF52CA7EE216B6EEC97B6FD7D /* Pods-SwiftSortDescriptor_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftSortDescriptor_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftSortDescriptor_Tests/Pods-SwiftSortDescriptor_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SwiftSortDescriptor_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		ADA05EDCB132695E2F7F0ED121A77364 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E7F53891CA57A03FF4B2653522FA279 /* SwiftSortDescriptor.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSortDescriptor/SwiftSortDescriptor-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSortDescriptor/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftSortDescriptor/SwiftSortDescriptor.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftSortDescriptor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C786DFF2934A5B428DC47572151D5EC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7452E49B0D0148FC4D94D146BDD62B14 /* Pods-SwiftSortDescriptor_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftSortDescriptor_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftSortDescriptor_Example/Pods-SwiftSortDescriptor_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SwiftSortDescriptor_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EA0497C124E9B21B1660A345D29C411D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E7F53891CA57A03FF4B2653522FA279 /* SwiftSortDescriptor.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSortDescriptor/SwiftSortDescriptor-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSortDescriptor/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftSortDescriptor/SwiftSortDescriptor.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftSortDescriptor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18FE0750E90A5CCFFE426D4E966889B5 /* Build configuration list for PBXNativeTarget "SwiftSortDescriptor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADA05EDCB132695E2F7F0ED121A77364 /* Debug */,
+				EA0497C124E9B21B1660A345D29C411D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B3F7BDD7665DC5B3B7EA4B68A3FAC26 /* Build configuration list for PBXNativeTarget "Pods-SwiftSortDescriptor_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51BE65FF6AD4291DC05FFF1C86ED59DD /* Debug */,
+				25925460AA4119C72E00643FD6BA239A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
+				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B617FDA1A51835C0A5FBB5F1B5CA7041 /* Build configuration list for PBXNativeTarget "Pods-SwiftSortDescriptor_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C786DFF2934A5B428DC47572151D5EC2 /* Debug */,
+				3466FA2B87A239C273922645605327F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
