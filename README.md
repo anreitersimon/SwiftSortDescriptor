@@ -1,6 +1,6 @@
 # SwiftSortDescriptor
 
-[![CI Status](http://img.shields.io/travis/Simon Anreiter/SwiftSortDescriptor.svg?style=flat)](https://travis-ci.org/Simon Anreiter/SwiftSortDescriptor)
+[![CI Status](https://travis-ci.org/anreitersimon/SwiftSortDescriptor.svg?branch=master)](https://travis-ci.org/anreitersimon/SwiftSortDescriptor)
 [![Version](https://img.shields.io/cocoapods/v/SwiftSortDescriptor.svg?style=flat)](http://cocoapods.org/pods/SwiftSortDescriptor)
 [![License](https://img.shields.io/cocoapods/l/SwiftSortDescriptor.svg?style=flat)](http://cocoapods.org/pods/SwiftSortDescriptor)
 [![Platform](https://img.shields.io/cocoapods/p/SwiftSortDescriptor.svg?style=flat)](http://cocoapods.org/pods/SwiftSortDescriptor)
