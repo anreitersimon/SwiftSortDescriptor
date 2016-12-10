@@ -18,13 +18,13 @@ func XCTAssertEqual<T: Equatable>(_ expression1: @autoclosure () throws -> [T?],
     let e2 = try! expression2()
 
     guard e1.count == e2.count else {
-        XCTFail(message, file: file, line: line)
+        XCTFail(message(), file: file, line: line)
         return
     }
 
     for (lhs, rhs) in zip(e1, e2) {
         guard lhs == rhs else {
-            XCTFail(message, file: file, line: line)
+            XCTFail(message(), file: file, line: line)
             return
         }
     }
