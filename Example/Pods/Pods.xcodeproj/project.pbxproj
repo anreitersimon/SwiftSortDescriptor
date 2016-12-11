@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C04EFA31DFC91A100C43C38 /* SortDescriptorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C04EFA11DFC914900C43C38 /* SortDescriptorType.swift */; };
+		3C04EFA51DFC91C200C43C38 /* Sequence+SortDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C04EFA41DFC91C200C43C38 /* Sequence+SortDescriptor.swift */; };
 		3C19B14F1DF56C5200F65260 /* AnyComparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C19B14E1DF56C5200F65260 /* AnyComparable.swift */; };
 		3C19B1511DF56C7000F65260 /* SortDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C19B1501DF56C7000F65260 /* SortDescriptor.swift */; };
 		3DB0EBD6A428A7F6B8976815FA691585 /* Pods-SwiftSortDescriptor_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FB2AEA77A2FEF29B8353DE0C68920A6F /* Pods-SwiftSortDescriptor_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -35,8 +37,10 @@
 		1A3A7114C8A99AE754A4EE64BEBA9715 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2DC0EB5867E858E060E40B1443A67E54 /* Pods-SwiftSortDescriptor_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftSortDescriptor_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		30484303BB5C5B60A258E78F549C1C63 /* Pods-SwiftSortDescriptor_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftSortDescriptor_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3C04EFA11DFC914900C43C38 /* SortDescriptorType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortDescriptorType.swift; sourceTree = "<group>"; };
+		3C04EFA41DFC91C200C43C38 /* Sequence+SortDescriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sequence+SortDescriptor.swift"; sourceTree = "<group>"; };
 		3C19B14E1DF56C5200F65260 /* AnyComparable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyComparable.swift; sourceTree = "<group>"; };
-		3C19B1501DF56C7000F65260 /* SortDescriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortDescriptor.swift; sourceTree = "<group>"; };
+		3C19B1501DF56C7000F65260 /* SortDescriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = SortDescriptor.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4059536D168840B52BF486F709A9EA49 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		592A15C15F7A8E78F3CC20C5EB99DEB6 /* SwiftSortDescriptor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftSortDescriptor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		602C5E3ED356C0D2DFCB1DB05541AF38 /* Pods-SwiftSortDescriptor_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SwiftSortDescriptor_Example.modulemap"; sourceTree = "<group>"; };
@@ -175,6 +179,8 @@
 			children = (
 				3C19B14E1DF56C5200F65260 /* AnyComparable.swift */,
 				3C19B1501DF56C7000F65260 /* SortDescriptor.swift */,
+				3C04EFA11DFC914900C43C38 /* SortDescriptorType.swift */,
+				3C04EFA41DFC91C200C43C38 /* Sequence+SortDescriptor.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -364,6 +370,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C04EFA51DFC91C200C43C38 /* Sequence+SortDescriptor.swift in Sources */,
+				3C04EFA31DFC91A100C43C38 /* SortDescriptorType.swift in Sources */,
 				3C19B14F1DF56C5200F65260 /* AnyComparable.swift in Sources */,
 				6208E863C5F2B0F87E21DE10C029B939 /* SwiftSortDescriptor-dummy.m in Sources */,
 				3C19B1511DF56C7000F65260 /* SortDescriptor.swift in Sources */,
@@ -421,6 +429,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F130B737946B56573FCE61C03DB79EC4 /* Pods-SwiftSortDescriptor_Example.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -609,6 +618,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7452E49B0D0148FC4D94D146BDD62B14 /* Pods-SwiftSortDescriptor_Example.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";

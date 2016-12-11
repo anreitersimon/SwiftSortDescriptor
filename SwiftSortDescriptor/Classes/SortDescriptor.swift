@@ -8,96 +8,103 @@
 
 import Foundation
 
-/** protocol version of SortDescriptor allowing constrained same-type extensions
- 
- ```
- extension SortDescriptorType where Base == YourType {
-    ...
- }
- ```
- */
-public protocol SortDescriptorType {
-    associatedtype Base
+public struct Sort<T> {
+
+    public static func by<V: Comparable>(ascending: Bool = true, transform: @escaping (T)->V?)-> SortDescriptor<T, V> {
+        return SortDescriptor(ascending: ascending, transform: transform)
+    }
+
+    public static func compare(_ lhs: T, _ rhs:T, descriptors: [SortDescriptor<T, AnyComparable>]) -> ComparisonResult {
+
+        var iterator = descriptors.makeIterator()
+
+        while let current = iterator.next() {
+            switch current.compare(lhs, rhs) {
+            case .orderedAscending:
+                return .orderedAscending
+
+            case .orderedDescending:
+                return  .orderedDescending
+
+            case .orderedSame:
+                continue
+            }
+        }
+
+        return .orderedAscending
+    }
 }
 
-public struct SortDescriptor<T>: SortDescriptorType {
-    public typealias Base = T
+public struct SortDescriptor<T,V: Comparable> {
+    public typealias ValueMapper = (T)->V?
 
     public let isAscending: Bool
 
-    private let mapValue: (T)->AnyComparable
+    fileprivate let mapValue: ValueMapper
 
-    /// returns an ascending version of the sort-descriptor
-    public var ascending: SortDescriptor<T> {
-        return SortDescriptor(ascending: true, closure: self.mapValue)
+}
+
+extension SortDescriptor: SortDescriptorType, GenericSortDescriptorType {
+    public typealias Base = T
+    public typealias MappedValue = V
+    
+
+    public func asSortDescriptor() -> SortDescriptor<T,V> {
+        return self
     }
+}
 
-    /// returns an descending version of the sort-descriptor
-    public var descending: SortDescriptor<T> {
-        return SortDescriptor(ascending: false, closure: self.mapValue)
-    }
+extension SortDescriptor {
 
-    private init(ascending: Bool, closure: @escaping (T)->AnyComparable) {
-        self.mapValue = closure
+    public init(ascending: Bool = true, transform: @escaping ValueMapper) {
         self.isAscending = ascending
-    }
-
-
-    public init<V: Comparable>(ascending: Bool = true, mapKey: @escaping (T)->V?) {
-        self.isAscending = ascending
-        self.mapValue = { AnyComparable(mapKey($0)) }
+        self.mapValue = transform
     }
 
     public func compare(_ lhs: T, _ rhs:T) -> ComparisonResult {
-        let result = mapValue(lhs).compare(mapValue(rhs))
+        let lhsAny = AnyComparable(mapValue(lhs))
+        let rhsAny = AnyComparable(mapValue(rhs))
+
+
+        let result = lhsAny.compare(rhsAny)
 
         switch (isAscending, result) {
         case (true,_):
             return result
         case (false, .orderedAscending):
             return .orderedDescending
+
         case (false, .orderedDescending):
             return .orderedAscending
+
         case (false, .orderedSame):
             return .orderedSame
         }
     }
-
-    public static func compare(_ lhs: T, _ rhs:T, sortKeys: [SortDescriptor<T>]) -> ComparisonResult {
-
-        var iterator = sortKeys.makeIterator()
-
-        while let current = iterator.next() {
-            switch current.compare(lhs, rhs) {
-            case .orderedAscending:
-                return .orderedAscending
-            case .orderedDescending:
-                return  .orderedDescending
-            case .orderedSame:
-                continue
-            }
-        }
-        
-        return .orderedAscending
-    }
-
-    public static func exists<V: Comparable>(nilFirst ascending: Bool = true, mapKey: @escaping (T)->V?)->SortDescriptor<T> {
-        return SortDescriptor<T>(ascending: ascending) {  mapKey($0) == nil ? 0 : 1 }
-    }
-
-    public var existsDescriptor: SortDescriptor<T> {
-        let mapValue: (T)->AnyComparable = {
-            let ordinalValue = self.mapValue($0).base == nil ? 0 : 1
-            return AnyComparable(ordinalValue)
-        }
-
-        return SortDescriptor<T>(ascending: self.isAscending, closure: mapValue)
-    }
-
 }
 
-extension Sequence {
-    public func sorted(descriptors: [SortDescriptor<Iterator.Element>]) -> [Iterator.Element] {
-        return sorted { return SortDescriptor.compare($0, $1, sortKeys: descriptors) == .orderedAscending }
+extension SortDescriptorType {
+
+    public func map<V2: Comparable>(transform: @escaping (MappedValue?)->V2? )->SortDescriptor<Base,V2> {
+        let s = self.asSortDescriptor()
+        return SortDescriptor<Base,V2>(ascending: s.isAscending) {
+            return transform(s.mapValue($0))
+        }
+    }
+
+    /// returns an ascending version of the sort-descriptor
+    public var ascending: SortDescriptor<Base, MappedValue> {
+        return SortDescriptor(ascending: true, transform: self.asSortDescriptor().mapValue)
+    }
+
+    /// returns an descending version of the sort-descriptor
+    public var descending: SortDescriptor<Base, MappedValue> {
+        return SortDescriptor(ascending: false, transform: self.asSortDescriptor().mapValue)
+    }
+
+
+    public var existence: SortDescriptor<Base, Int> {
+        return self.map { $0 == nil ? 0 : 1 }
     }
 }
+

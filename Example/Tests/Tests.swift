@@ -35,22 +35,27 @@ class SortDescriptorTests: XCTestCase {
 
     func test_SingleKeyPath_SortsAscending() {
 
-        let aDescriptor = SortDescriptor<Item>(ascending: true) { $0.a }
+        let aDescriptor = Sort<Item>.by { $0.a }
 
-        let sorted = items.sorted(descriptors: [aDescriptor])
+        let sorted = items.sort(with: [aDescriptor])
 
         // Sort order is not defined if SortDescriptor returns orderedSame
 
         let sortedA = sorted.map { $0.a }
 
-        XCTAssertEqual(sortedA, [1,1,1,1,1,1, 2,2,2,2,2,2])
+        let expected = [
+            1,1,1,1,1,1,
+            2,2,2,2,2,2
+        ]
+
+        XCTAssertEqual(sortedA, expected)
     }
 
     func test_SingleKeyPath_SortsDescending() {
 
-        let aDescriptor = SortDescriptor<Item>(ascending: false) { $0.a }
+        let aDescriptor = Sort<Item>.by { $0.a }.descending
 
-        let sorted = items.sorted(descriptors: [aDescriptor])
+        let sorted = items.sort(with: [aDescriptor])
 
         // Sort order is not defined if SortDescriptor returns orderedSame
 
@@ -66,9 +71,9 @@ class SortDescriptorTests: XCTestCase {
 
     func test_OptionalKeyPath_SortsAscending() {
 
-        let cDescriptor = SortDescriptor<Item>(ascending: true) { $0.c }
+        let cDescriptor = Sort<Item>.by { $0.c }
 
-        let sorted = items.sorted(descriptors: [cDescriptor])
+        let sorted = items.sort(with: [cDescriptor])
 
         let sortedC = sorted.map { $0.c }
 
@@ -83,9 +88,9 @@ class SortDescriptorTests: XCTestCase {
 
     func test_OptionalKeyPath_SortsDescending() {
 
-        let cDescriptor = SortDescriptor<Item>(ascending: false) { $0.c }
+        let cDescriptor = Sort<Item>.by { $0.c }.descending
 
-        let sorted = items.sorted(descriptors: [cDescriptor])
+        let sorted = items.sort(with: [cDescriptor])
 
         let sortedC = sorted.map { $0.c }
 
@@ -102,11 +107,11 @@ class SortDescriptorTests: XCTestCase {
 
     func test_MultipleKeyPath_SortsAllAscending() {
 
-        let aDescriptor = SortDescriptor<Item>(ascending: true) { $0.a }
-        let bDescriptor = SortDescriptor<Item>(ascending: true) { $0.b }
-        let cDescriptor = SortDescriptor<Item>(ascending: true) { $0.c }
+        let aDescriptor = Sort<Item>.by { $0.a }
+        let bDescriptor = Sort<Item>.by { $0.b }
+        let cDescriptor = Sort<Item>.by { $0.c }
 
-        let sorted = items.sorted(descriptors: [aDescriptor, bDescriptor, cDescriptor])
+        let sorted = items.sort(with: [aDescriptor.typeErased(), bDescriptor.typeErased(), cDescriptor.typeErased()])
 
         let expected = [
             Item(a: 1, b: 1, c: nil),
@@ -131,11 +136,11 @@ class SortDescriptorTests: XCTestCase {
 
     func test_MultipleKeyPaths_SortsAllDescending() {
 
-        let aDescriptor = SortDescriptor<Item>(ascending: false) { $0.a }
-        let bDescriptor = SortDescriptor<Item>(ascending: false) { $0.b }
-        let cDescriptor = SortDescriptor<Item>(ascending: false) { $0.c }
+        let aDescriptor = Sort<Item>.by { $0.a }.descending
+        let bDescriptor = Sort<Item>.by { $0.b }.descending
+        let cDescriptor = Sort<Item>.by { $0.c }.descending
 
-        let sorted = items.sorted(descriptors: [aDescriptor, bDescriptor, cDescriptor])
+        let sorted = items.sort(with: [aDescriptor.typeErased(), bDescriptor.typeErased(), cDescriptor.typeErased()])
 
         let expected = [
             Item(a: 2, b: 2, c: "2"),
@@ -160,11 +165,11 @@ class SortDescriptorTests: XCTestCase {
 
     func test_MultipleKeyPath_SortsMixed() {
 
-        let aDescriptor = SortDescriptor<Item>(ascending: true) { $0.a }
-        let bDescriptor = SortDescriptor<Item>(ascending: false) { $0.b }
-        let cDescriptor = SortDescriptor<Item>(ascending: true) { $0.c }
+        let aDescriptor = Sort<Item>.by { $0.a }
+        let bDescriptor = Sort<Item>.by { $0.b }.descending
+        let cDescriptor = Sort<Item>.by { $0.c }
 
-        let sorted = items.sorted(descriptors: [aDescriptor, bDescriptor, cDescriptor])
+        let sorted = items.sort(with: [aDescriptor.typeErased(), bDescriptor.typeErased(), cDescriptor.typeErased()])
 
         let expected = [
             Item(a: 1, b: 2, c: nil),
@@ -189,10 +194,10 @@ class SortDescriptorTests: XCTestCase {
 
     func test_CustomOptionalSorting() {
 
-        let cExistsDescriptor = SortDescriptor<Item>.exists(nilFirst: true) { $0.c }
-        let cDescriptor = SortDescriptor<Item>(ascending: false) { $0.c }
+        let cExistsDescriptor = Sort<Item>.by { $0.c }.existence
+        let cDescriptor = Sort<Item>.by { $0.c }.descending
         
-        let sorted = items.sorted(descriptors: [cExistsDescriptor, cDescriptor])
+        let sorted = items.sort(with: [cExistsDescriptor.typeErased(), cDescriptor.typeErased()])
         
         let sortedC = sorted.map { $0.c }
         

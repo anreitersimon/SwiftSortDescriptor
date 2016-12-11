@@ -9,12 +9,12 @@
 import Foundation
 
 /// type erased wrapper for objects conforming to Comparable
-struct AnyComparable: Comparable {
+public struct AnyComparable: Comparable {
 
     private let compareClosure: (AnyComparable)->ComparisonResult
-    let base: Any?
+    public let base: Any?
 
-    init<T: Comparable>(_ value: T?) {
+    public init<T: Comparable>(_ value: T?) {
         self.base = value
 
         self.compareClosure = { other in
@@ -39,7 +39,7 @@ struct AnyComparable: Comparable {
     /// compares wrapped values with rule:
     ///
     /// `.none < .some()`
-    func compare(_ val: AnyComparable) -> ComparisonResult {
+    public func compare(_ val: AnyComparable) -> ComparisonResult {
         return self.compareClosure(val)
     }
 

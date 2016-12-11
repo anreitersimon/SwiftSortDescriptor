@@ -8,6 +8,15 @@
 
 import UIKit
 
+import SwiftSortDescriptor
+
+extension SortDescriptorType where MappedValue == String {
+    var caseInsensitive: SortDescriptor<Base, String> {
+        return self.asSortDescriptor().map { $0?.lowercased() }
+    }
+
+}
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
