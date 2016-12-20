@@ -1,6 +1,0 @@
-framework module SwiftSortDescriptor {
-  umbrella header "SwiftSortDescriptor-umbrella.h"
-
-  export *
-  module * { export * }
-}
