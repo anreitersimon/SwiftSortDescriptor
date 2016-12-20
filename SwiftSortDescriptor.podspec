@@ -22,7 +22,6 @@ TODO: Add long description of the pod here.
                        DESC
 
   s.homepage         = 'https://github.com/anreitersimon/SwiftSortDescriptor'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Simon Anreiter' => 'anreiter.simon@gmail.com' }
   s.source           = { :git => 'https://github.com/anreitersimon/SwiftSortDescriptor.git', :tag => s.version.to_s }
@@ -30,13 +29,6 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'SwiftSortDescriptor/Classes/**/*'
+  s.source_files = 'SwiftSortDescriptor/Sources/**/*'
 
-  # s.resource_bundles = {
-  #   'SwiftSortDescriptor' => ['SwiftSortDescriptor/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
