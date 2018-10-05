@@ -11,7 +11,7 @@ steps:
   inputs:
     actions: 'test'
     scheme: 'SwiftSortDescriptorTests'
-    sdk: 'iphonesimulator'
-    configuration: 'Debug'
+    destinationTypeOption: 'simulators'
+    destinationSimulators: 'iPhone 7'
     xcWorkspacePath: './SwiftSortDescriptor.xcworkspace'
     xcodeVersion: 'default' # Options: 8, 9, default, specifyPath
