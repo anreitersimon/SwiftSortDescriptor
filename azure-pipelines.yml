@@ -12,6 +12,6 @@ steps:
     actions: 'test'
     scheme: 'SwiftSortDescriptorTests'
     sdk: 'iphoneos'
-    configuration: 'Release'
+    configuration: 'Debug'
     xcWorkspacePath: '**/*.xcodeproj/project.xcworkspace'
     xcodeVersion: 'default' # Options: 8, 9, default, specifyPath
